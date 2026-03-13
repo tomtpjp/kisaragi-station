@@ -49,7 +49,7 @@ function randomChoice(rand, items) {
   return items[randomInt(rand, 0, items.length - 1)];
 }
 
-function generateHeroSvg(rand, stampText) {
+function generateHeroSvg(rand) {
   const skyTop = randomChoice(rand, ["#100D0C", "#120E0C", "#18120F", "#140F0D"]);
   const skyBottom = randomChoice(rand, ["#2C201B", "#352722", "#2B201B", "#30241F"]);
   const groundTop = randomChoice(rand, ["#1E1713", "#221A16", "#1B1512"]);
@@ -119,7 +119,6 @@ function generateHeroSvg(rand, stampText) {
   ${pillars}
   <ellipse cx="${personX}" cy="${personY}" rx="28" ry="66" fill="#0F0C0B" opacity="0.62"/>
   <ellipse cx="${personX - 2}" cy="${personY - 36}" rx="18" ry="18" fill="#0F0C0B" opacity="0.62"/>
-  <text x="1160" y="744" text-anchor="end" font-size="17" font-family="serif" fill="#BFA078" fill-opacity="0.55">AUTO GENERATED ${stampText}</text>
 </svg>`;
 }
 
@@ -130,19 +129,20 @@ const mm = String(jst.getUTCMonth() + 1).padStart(2, "0");
 const dd = String(jst.getUTCDate()).padStart(2, "0");
 const hh = String(jst.getUTCHours()).padStart(2, "0");
 const mi = String(jst.getUTCMinutes()).padStart(2, "0");
+const ss = String(jst.getUTCSeconds()).padStart(2, "0");
 const dateKey = `${yyyy}${mm}${dd}`;
-const stamp = `${yyyy}-${mm}-${dd} ${hh}:${mi} JST`;
-const iso = `${yyyy}-${mm}-${dd}T${hh}:${mi}:00+09:00`;
+const stamp = `${yyyy}/${mm}/${dd} ${hh}:${mi}:${ss}`;
+const iso = `${yyyy}-${mm}-${dd}T${hh}:${mi}:${ss}+09:00`;
 const rand = createSeededRandom(dateKey);
 
-const heroSvg = generateHeroSvg(rand, dateKey);
+const heroSvg = generateHeroSvg(rand);
 const heroSrc = `assets/generated-hero.svg?v=${dateKey}`;
 const heroAlt = randomChoice(rand, alts);
 const heroCaption = randomChoice(rand, captions);
 
 const pick = notices[Math.floor(Math.random() * notices.length)];
 const autoNotice = [
-  `        <li>${yyyy}年${Number(mm)}月${Number(dd)}日 ${hh}:${mi} 更新: ${pick}</li>`,
+  `        <li>${stamp} 更新: ${pick}</li>`,
   "        <li>構内時計が停止している場合は、係員の指示に従ってください。</li>",
   "        <li>3番ホームは足元が見えにくいため、白線の内側でお待ちください。</li>"
 ].join("\n");
@@ -156,7 +156,7 @@ const autoHero = [
   `      <img src="${heroSrc}" alt="${heroAlt}">`,
   "      <div class=\"hero-caption\">",
   `        <span>${heroCaption}</span>`,
-  `        <span>撮影時刻 ${hh}:${mi} / 更新日 ${yyyy}-${mm}-${dd}</span>`,
+  `        <span>記録時刻 ${stamp}</span>`,
   "      </div>"
 ].join("\n");
 
