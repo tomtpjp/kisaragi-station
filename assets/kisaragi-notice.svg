@@ -1,0 +1,25 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper" x1="450" y1="0" x2="450" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D2C29D"/>
+      <stop offset="1" stop-color="#A79271"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" rx="16" fill="#2B201B"/>
+  <rect x="32" y="28" width="836" height="564" rx="10" fill="url(#paper)"/>
+  <rect x="70" y="72" width="760" height="74" fill="#2F241F"/>
+  <text x="450" y="120" text-anchor="middle" font-size="42" font-family="serif" fill="#E7D6B4">深夜巡回のお知らせ</text>
+  <text x="88" y="206" font-size="32" font-family="serif" fill="#241A16">・ 0時以降、駅舎西側通路は閉鎖されます。</text>
+  <text x="88" y="268" font-size="32" font-family="serif" fill="#241A16">・ 呼び出しベルが鳴っても振り返らないでください。</text>
+  <text x="88" y="330" font-size="32" font-family="serif" fill="#241A16">・ 駅名標の下での撮影はご遠慮ください。</text>
+  <text x="88" y="422" font-size="26" font-family="serif" fill="#4A3931">きさらぎ駅 駅務室</text>
+  <g opacity="0.22">
+    <circle cx="736" cy="456" r="88" fill="#8E3028"/>
+    <circle cx="736" cy="456" r="60" fill="#6F211A"/>
+  </g>
+  <g opacity="0.18">
+    <rect x="64" y="472" width="772" height="8" fill="#3A2B25"/>
+    <rect x="64" y="498" width="460" height="8" fill="#3A2B25"/>
+    <rect x="64" y="524" width="520" height="8" fill="#3A2B25"/>
+  </g>
+</svg>
