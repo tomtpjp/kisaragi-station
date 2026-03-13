@@ -13,6 +13,24 @@ const notices = [
   "防犯案内: 深夜の単独行動はなるべくお控えください。"
 ];
 
+const heroVariants = [
+  {
+    src: "assets/station-night.svg",
+    alt: "夜のきさらぎ駅を描いた古い案内写真",
+    caption: "駅前記録写真 / 西側駅舎"
+  },
+  {
+    src: "assets/station-night-2.svg",
+    alt: "雨上がりのきさらぎ駅を描いた古い案内写真",
+    caption: "駅前記録写真 / 雨上がりのホーム"
+  },
+  {
+    src: "assets/station-night-3.svg",
+    alt: "深夜のきさらぎ駅正面を描いた古い案内写真",
+    caption: "駅前記録写真 / 深夜巡回時"
+  }
+];
+
 const now = new Date();
 const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
 const yyyy = jst.getUTCFullYear();
@@ -22,6 +40,10 @@ const hh = String(jst.getUTCHours()).padStart(2, "0");
 const mi = String(jst.getUTCMinutes()).padStart(2, "0");
 const stamp = `${yyyy}-${mm}-${dd} ${hh}:${mi} JST`;
 const iso = `${yyyy}-${mm}-${dd}T${hh}:${mi}:00+09:00`;
+
+const yearStart = Date.UTC(yyyy, 0, 1);
+const dayNumber = Math.floor((Date.UTC(yyyy, Number(mm) - 1, Number(dd)) - yearStart) / (1000 * 60 * 60 * 24));
+const hero = heroVariants[dayNumber % heroVariants.length];
 
 const pick = notices[Math.floor(Math.random() * notices.length)];
 const autoNotice = [
@@ -33,6 +55,19 @@ const autoNotice = [
 let updated = source.replace(
   /(<!-- AUTO_NOTICE_START -->)[\s\S]*?(<!-- AUTO_NOTICE_END -->)/,
   `$1\n${autoNotice}\n        $2`
+);
+
+const autoHero = [
+  `      <img src="${hero.src}" alt="${hero.alt}">`,
+  "      <div class=\"hero-caption\">",
+  `        <span>${hero.caption}</span>`,
+  `        <span>撮影時刻 ${hh}:${mi} / 更新日 ${yyyy}-${mm}-${dd}</span>`,
+  "      </div>"
+].join("\n");
+
+updated = updated.replace(
+  /(<!-- AUTO_HERO_START -->)[\s\S]*?(<!-- AUTO_HERO_END -->)/,
+  `$1\n${autoHero}\n      $2`
 );
 
 updated = updated.replace(

@@ -1,0 +1,48 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky3" x1="600" y1="0" x2="600" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100D0C"/>
+      <stop offset="1" stop-color="#241B17"/>
+    </linearGradient>
+    <linearGradient id="ground3" x1="600" y1="450" x2="600" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D1512"/>
+      <stop offset="1" stop-color="#070606"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="780" fill="url(#sky3)"/>
+  <circle cx="980" cy="120" r="72" fill="#D8C39A" fill-opacity="0.06"/>
+
+  <rect y="450" width="1200" height="330" fill="url(#ground3)"/>
+
+  <rect x="260" y="296" width="690" height="194" fill="#171210"/>
+  <rect x="292" y="330" width="136" height="70" fill="#342822"/>
+  <rect x="450" y="330" width="136" height="70" fill="#342822"/>
+  <rect x="608" y="330" width="136" height="70" fill="#342822"/>
+  <rect x="770" y="330" width="152" height="136" fill="#261D18"/>
+  <rect x="230" y="278" width="748" height="28" fill="#443029"/>
+
+  <rect x="500" y="236" width="210" height="50" fill="#BDA376"/>
+  <text x="605" y="269" text-anchor="middle" font-size="40" font-family="serif" fill="#17120F">きさらぎ駅</text>
+
+  <rect x="0" y="510" width="1200" height="7" fill="#6E5C4D" fill-opacity="0.55"/>
+  <rect x="0" y="560" width="1200" height="5" fill="#8A7665" fill-opacity="0.35"/>
+
+  <g opacity="0.34">
+    <rect x="90" y="520" width="18" height="180" fill="#151110"/>
+    <rect x="230" y="520" width="18" height="180" fill="#151110"/>
+    <rect x="1010" y="520" width="18" height="180" fill="#151110"/>
+    <rect x="1120" y="520" width="18" height="180" fill="#151110"/>
+  </g>
+
+  <g opacity="0.62">
+    <ellipse cx="340" cy="404" rx="30" ry="74" fill="#0F0C0B"/>
+    <ellipse cx="338" cy="364" rx="19" ry="19" fill="#0F0C0B"/>
+  </g>
+
+  <g opacity="0.14">
+    <path d="M0 58C136 92 294 30 446 58C610 88 760 32 916 46C1016 56 1106 74 1200 68V0H0V58Z" fill="#6A4A3F"/>
+    <circle cx="152" cy="102" r="1.4" fill="#F4E8CF"/>
+    <circle cx="208" cy="164" r="1.1" fill="#F4E8CF"/>
+    <circle cx="884" cy="84" r="1.6" fill="#F4E8CF"/>
+  </g>
+</svg>
