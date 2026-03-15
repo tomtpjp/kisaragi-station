@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS Mincho", "Times New Roman", serif;
+  font-family: "BIZ UDPMincho", "Yu Mincho", "MS PMincho", serif;
   color: var(--paper);
   background:
     radial-gradient(circle at 15% 10%, rgba(135, 70, 49, 0.17), transparent 38%),
@@ -130,8 +130,8 @@ h1 {
   animation: riseIn 0.9s ease both;
 }
 
-.notice { grid-column: span 7; }
-.timetable { grid-column: span 5; animation-delay: 0.12s; }
+.notice { grid-column: span 12; }
+.timetable { grid-column: span 6; animation-delay: 0.12s; }
 .archive {
   grid-column: span 6;
   display: grid;
@@ -140,7 +140,7 @@ h1 {
   align-items: center;
   animation-delay: 0.18s;
 }
-.map { grid-column: span 6; animation-delay: 0.24s; }
+.map { grid-column: span 12; animation-delay: 0.24s; }
 
 h2 {
   margin: 0 0 12px;
