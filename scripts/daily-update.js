@@ -4,6 +4,7 @@ const path = require("path");
 const indexPath = path.join(__dirname, "..", "index.html");
 const stylesPath = path.join(__dirname, "..", "styles.css");
 const heroImagePath = path.join(__dirname, "..", "assets", "generated-hero.svg");
+const statePath = path.join(__dirname, "element-state.json");
 
 const notices = [
   "終電案内: 23:58発の下り列車は運行状況を確認中です。",
@@ -420,8 +421,36 @@ function generateHtml(data) {
     stationCode,
     archiveText,
     mapNote,
-    layout
+    layout,
+    activeElements
   } = data;
+
+  const extraNoticeItems = activeElements
+    .filter((e) => e.type === "notice-item")
+    .map((e) => `\n        <li>${e.content}</li>`)
+    .join("");
+
+  const extraTimetableRows = activeElements
+    .filter((e) => e.type === "timetable-row")
+    .map((e) => [
+      "",
+      "          <tr>",
+      `            <td>${e.content.train}</td>`,
+      `            <td>${e.content.time}</td>`,
+      `            <td>${e.content.dest}</td>`,
+      "          </tr>"
+    ].join("\n"))
+    .join("");
+
+  const extraLegendItems = activeElements
+    .filter((e) => e.type === "map-legend-item")
+    .map((e) => `\n        <span>${e.content}</span>`)
+    .join("");
+
+  const extraFooterNotes = activeElements
+    .filter((e) => e.type === "footer-note")
+    .map((e) => `\n    <p>${e.content}</p>`)
+    .join("");
 
   const sections = {
     notice: `<section class="panel notice">
@@ -430,7 +459,7 @@ function generateHtml(data) {
         <!-- AUTO_NOTICE_START -->
         <li>${noticeLine}</li>
         <li>構内時計が停止している場合は、係員の指示に従ってください。</li>
-        <li>3番ホームは足元が見えにくいため、白線の内側でお待ちください。</li>
+        <li>3番ホームは足元が見えにくいため、白線の内側でお待ちください。</li>${extraNoticeItems}
         <!-- AUTO_NOTICE_END -->
       </ul>
       <p class="panel-note">本日深夜帯は巡回放送を実施しております。ホーム端での長時間滞在はお控えください。</p>
@@ -466,7 +495,7 @@ function generateHtml(data) {
             <td>回送 801M</td>
             <td>--:--</td>
             <td>記録なし</td>
-          </tr>
+          </tr>${extraTimetableRows}
         </tbody>
       </table>
       <p class="panel-note">※ 列車遅延時は、案内表示が一時的に消灯する場合があります。</p>
@@ -495,7 +524,7 @@ function generateHtml(data) {
       <div class="legend">
         <span>改札口は1か所のみ</span>
         <span>公衆電話は現在ご利用いただけません</span>
-        <span>非常灯が点滅した場合はホーム中央へ</span>
+        <span>非常灯が点滅した場合はホーム中央へ</span>${extraLegendItems}
       </div>
     </section>`
   };
@@ -535,7 +564,7 @@ function generateHtml(data) {
 
   <footer>
     <p>きさらぎ駅 駅務室</p>
-    <p>※ 駅係員が不在の場合、ホーム内放送は繰り返されます。</p>
+    <p>※ 駅係員が不在の場合、ホーム内放送は繰り返されます。</p>${extraFooterNotes}
   </footer>
 </body>
 </html>`;
@@ -655,6 +684,56 @@ const mapNotes = [
   "終電後の構内移動は係員案内時のみ可能です。単独での進入はご遠慮ください。"
 ];
 
+const allOptionalElements = [
+  { type: "notice-item", content: "改札外の掲示板は現在確認できません。" },
+  { type: "notice-item", content: "深夜帯の自動放送が一時中断しております。" },
+  { type: "notice-item", content: "1番線ホームの照明が一部点滅中です。" },
+  { type: "notice-item", content: "非常通報装置の点検を実施しております。" },
+  { type: "timetable-row", content: { train: "臨時 XM-0", time: "--:--", dest: "不明" } },
+  { type: "timetable-row", content: { train: "回送 000M", time: "00:00", dest: "終点（停車なし）" } },
+  { type: "timetable-row", content: { train: "特別 999M", time: "25:00", dest: "記録なし" } },
+  { type: "map-legend-item", content: "B出口は長期閉鎖中です。" },
+  { type: "map-legend-item", content: "待合室への入室は22時以降禁止です。" },
+  { type: "map-legend-item", content: "奥の通路は現在封鎖されています。" },
+  { type: "footer-note", content: "※ 夜間の構内撮影はお控えください。" },
+  { type: "footer-note", content: "※ 最終案内後、駅務室への連絡はできません。" }
+];
+
+function loadElementState() {
+  if (fs.existsSync(statePath)) {
+    return JSON.parse(fs.readFileSync(statePath, "utf8"));
+  }
+  return { lastUpdated: "", activeElements: [] };
+}
+
+function saveElementState(state) {
+  fs.writeFileSync(statePath, JSON.stringify(state, null, 2) + "\n", "utf8");
+}
+
+function updateElementState(state, rand, dateKey) {
+  if (state.lastUpdated === dateKey) {
+    return state;
+  }
+
+  const serialized = allOptionalElements.map((e) => JSON.stringify(e));
+  const activeKeys = new Set(state.activeElements.map((e) => JSON.stringify(e)));
+  const inactive = allOptionalElements.filter((_, i) => !activeKeys.has(serialized[i]));
+
+  const canAdd = inactive.length > 0;
+  const canRemove = state.activeElements.length > 0;
+
+  const shouldAdd = canAdd && (!canRemove || rand() < 0.5);
+
+  const newActive = state.activeElements.slice();
+  if (shouldAdd) {
+    newActive.push(randomChoice(rand, inactive));
+  } else {
+    newActive.splice(randomInt(rand, 0, newActive.length - 1), 1);
+  }
+
+  return { lastUpdated: dateKey, activeElements: newActive };
+}
+
 const theme = randomChoice(rand, themeVariants);
 const layout = randomChoice(rand, layoutVariants);
 const fontStack = randomChoice(rand, fontVariants);
@@ -662,6 +741,8 @@ const subtitle = randomChoice(rand, subtitles);
 const stationCode = randomChoice(rand, stationCodes);
 const archiveText = randomChoice(rand, archiveTexts);
 const mapNote = randomChoice(rand, mapNotes);
+
+const elementState = updateElementState(loadElementState(), rand, dateKey);
 
 const pick = notices[Math.floor(Math.random() * notices.length)];
 const noticeLine = `${stamp} 更新: ${pick}`;
@@ -677,7 +758,8 @@ const html = generateHtml({
   stationCode,
   archiveText,
   mapNote,
-  layout
+  layout,
+  activeElements: elementState.activeElements
 });
 
 const css = generateStyles(theme, layout, fontStack);
@@ -698,4 +780,5 @@ if (!hasIndexChange && !hasStylesChange && !hasHeroImageChange) {
 fs.writeFileSync(indexPath, html, "utf8");
 fs.writeFileSync(stylesPath, css, "utf8");
 fs.writeFileSync(heroImagePath, heroSvg, "utf8");
+saveElementState(elementState);
 console.log(`Updated site design and content at ${stamp}`);
