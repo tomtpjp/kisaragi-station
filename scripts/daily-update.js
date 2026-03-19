@@ -420,8 +420,32 @@ function generateHtml(data) {
     stationCode,
     archiveText,
     mapNote,
-    layout
+    layout,
+    optionalElement
   } = data;
+
+  const extraNoticeItem = optionalElement.show && optionalElement.type === "notice-item"
+    ? `\n        <li>${optionalElement.content}</li>`
+    : "";
+
+  const extraTimetableRow = optionalElement.show && optionalElement.type === "timetable-row"
+    ? [
+        "",
+        "          <tr>",
+        `            <td>${optionalElement.content.train}</td>`,
+        `            <td>${optionalElement.content.time}</td>`,
+        `            <td>${optionalElement.content.dest}</td>`,
+        "          </tr>"
+      ].join("\n")
+    : "";
+
+  const extraLegendItem = optionalElement.show && optionalElement.type === "map-legend-item"
+    ? `\n        <span>${optionalElement.content}</span>`
+    : "";
+
+  const extraFooterNote = optionalElement.show && optionalElement.type === "footer-note"
+    ? `\n    <p>${optionalElement.content}</p>`
+    : "";
 
   const sections = {
     notice: `<section class="panel notice">
@@ -430,7 +454,7 @@ function generateHtml(data) {
         <!-- AUTO_NOTICE_START -->
         <li>${noticeLine}</li>
         <li>構内時計が停止している場合は、係員の指示に従ってください。</li>
-        <li>3番ホームは足元が見えにくいため、白線の内側でお待ちください。</li>
+        <li>3番ホームは足元が見えにくいため、白線の内側でお待ちください。</li>${extraNoticeItem}
         <!-- AUTO_NOTICE_END -->
       </ul>
       <p class="panel-note">本日深夜帯は巡回放送を実施しております。ホーム端での長時間滞在はお控えください。</p>
@@ -466,7 +490,7 @@ function generateHtml(data) {
             <td>回送 801M</td>
             <td>--:--</td>
             <td>記録なし</td>
-          </tr>
+          </tr>${extraTimetableRow}
         </tbody>
       </table>
       <p class="panel-note">※ 列車遅延時は、案内表示が一時的に消灯する場合があります。</p>
@@ -495,7 +519,7 @@ function generateHtml(data) {
       <div class="legend">
         <span>改札口は1か所のみ</span>
         <span>公衆電話は現在ご利用いただけません</span>
-        <span>非常灯が点滅した場合はホーム中央へ</span>
+        <span>非常灯が点滅した場合はホーム中央へ</span>${extraLegendItem}
       </div>
     </section>`
   };
@@ -535,7 +559,7 @@ function generateHtml(data) {
 
   <footer>
     <p>きさらぎ駅 駅務室</p>
-    <p>※ 駅係員が不在の場合、ホーム内放送は繰り返されます。</p>
+    <p>※ 駅係員が不在の場合、ホーム内放送は繰り返されます。</p>${extraFooterNote}
   </footer>
 </body>
 </html>`;
@@ -655,6 +679,37 @@ const mapNotes = [
   "終電後の構内移動は係員案内時のみ可能です。単独での進入はご遠慮ください。"
 ];
 
+const optionalNoticeItems = [
+  "改札外の掲示板は現在確認できません。",
+  "深夜帯の自動放送が一時中断しております。",
+  "1番線ホームの照明が一部点滅中です。",
+  "非常通報装置の点検を実施しております。"
+];
+
+const optionalTimetableRows = [
+  { train: "臨時 XM-0", time: "--:--", dest: "不明" },
+  { train: "回送 000M", time: "00:00", dest: "終点（停車なし）" },
+  { train: "特別 999M", time: "25:00", dest: "記録なし" }
+];
+
+const optionalLegendItems = [
+  "B出口は長期閉鎖中です。",
+  "待合室への入室は22時以降禁止です。",
+  "奥の通路は現在封鎖されています。"
+];
+
+const optionalFooterNotes = [
+  "※ 夜間の構内撮影はお控えください。",
+  "※ 最終案内後、駅務室への連絡はできません。"
+];
+
+const elementSlots = [
+  { type: "notice-item", pool: optionalNoticeItems },
+  { type: "timetable-row", pool: optionalTimetableRows },
+  { type: "map-legend-item", pool: optionalLegendItems },
+  { type: "footer-note", pool: optionalFooterNotes }
+];
+
 const theme = randomChoice(rand, themeVariants);
 const layout = randomChoice(rand, layoutVariants);
 const fontStack = randomChoice(rand, fontVariants);
@@ -662,6 +717,13 @@ const subtitle = randomChoice(rand, subtitles);
 const stationCode = randomChoice(rand, stationCodes);
 const archiveText = randomChoice(rand, archiveTexts);
 const mapNote = randomChoice(rand, mapNotes);
+
+const activeSlot = randomChoice(rand, elementSlots);
+const optionalElement = {
+  type: activeSlot.type,
+  content: randomChoice(rand, activeSlot.pool),
+  show: rand() < 0.5
+};
 
 const pick = notices[Math.floor(Math.random() * notices.length)];
 const noticeLine = `${stamp} 更新: ${pick}`;
@@ -677,7 +739,8 @@ const html = generateHtml({
   stationCode,
   archiveText,
   mapNote,
-  layout
+  layout,
+  optionalElement
 });
 
 const css = generateStyles(theme, layout, fontStack);
