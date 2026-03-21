@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260321",
+  "lastUpdated": "20260322",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -12,6 +12,10 @@
     {
       "type": "footer-note",
       "content": "※ 最終案内後、駅務室への連絡はできません。"
+    },
+    {
+      "type": "map-legend-item",
+      "content": "奥の通路は現在封鎖されています。"
     }
   ]
 }
