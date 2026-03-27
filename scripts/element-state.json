@@ -1,17 +1,9 @@
 {
-  "lastUpdated": "20260327",
+  "lastUpdated": "20260328",
   "activeElements": [
     {
       "type": "map-legend-item",
       "content": "待合室への入室は22時以降禁止です。"
-    },
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "回送 000M",
-        "time": "00:00",
-        "dest": "終点（停車なし）"
-      }
     }
   ]
 }
