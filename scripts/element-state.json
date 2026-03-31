@@ -1,4 +1,9 @@
 {
-  "lastUpdated": "20260331",
-  "activeElements": []
+  "lastUpdated": "20260401",
+  "activeElements": [
+    {
+      "type": "notice-item",
+      "content": "深夜帯の自動放送が一時中断しております。"
+    }
+  ]
 }
