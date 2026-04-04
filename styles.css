@@ -1,10 +1,10 @@
 :root {
-  --bg-1: #11141a;
-  --bg-2: #1f242c;
-  --paper: #d9d2bc;
-  --ink: #12151a;
-  --accent: #7e4030;
-  --accent-soft: #9d8262;
+  --bg-1: #0f0d0b;
+  --bg-2: #1d1713;
+  --paper: #d2c4a6;
+  --ink: #16110d;
+  --accent: #9d2a1f;
+  --accent-soft: #b58d64;
   --line: rgba(210, 196, 166, 0.35);
   --shadow: rgba(0, 0, 0, 0.55);
 }
@@ -22,9 +22,9 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   color: var(--paper);
   background:
-    radial-gradient(circle at 15% 10%, rgba(126, 64, 48, 0.16), transparent 38%),
-    radial-gradient(circle at 80% 80%, rgba(94, 110, 122, 0.2), transparent 42%),
-    linear-gradient(145deg, var(--bg-1), var(--bg-2));
+    radial-gradient(circle at 15% 10%, rgba(157, 42, 31, 0.15), transparent 38%),
+    radial-gradient(circle at 80% 80%, rgba(123, 101, 74, 0.22), transparent 42%),
+    linear-gradient(160deg, var(--bg-1), var(--bg-2));
   line-height: 1.65;
   letter-spacing: 0.02em;
   overflow-x: hidden;
@@ -130,8 +130,8 @@ h1 {
   animation: riseIn 0.9s ease both;
 }
 
-.notice { grid-column: span 7; }
-.timetable { grid-column: span 5; animation-delay: 0.12s; }
+.notice { grid-column: span 12; }
+.timetable { grid-column: span 6; animation-delay: 0.12s; }
 .archive {
   grid-column: span 6;
   display: grid;
@@ -140,7 +140,7 @@ h1 {
   align-items: center;
   animation-delay: 0.18s;
 }
-.map { grid-column: span 6; animation-delay: 0.24s; }
+.map { grid-column: span 12; animation-delay: 0.24s; }
 
 h2 {
   margin: 0 0 12px;
