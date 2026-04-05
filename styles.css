@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS Mincho", "Times New Roman", serif;
   color: var(--paper);
   background:
     radial-gradient(circle at 15% 10%, rgba(157, 42, 31, 0.15), transparent 38%),
@@ -130,17 +130,17 @@ h1 {
   animation: riseIn 0.9s ease both;
 }
 
-.notice { grid-column: span 12; }
+.notice { grid-column: span 6; }
 .timetable { grid-column: span 6; animation-delay: 0.12s; }
 .archive {
-  grid-column: span 6;
+  grid-column: span 12;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1.15fr;
   gap: 18px;
   align-items: center;
   animation-delay: 0.18s;
 }
-.map { grid-column: span 12; animation-delay: 0.24s; }
+.map { grid-column: 2 / span 10; animation-delay: 0.24s; }
 
 h2 {
   margin: 0 0 12px;

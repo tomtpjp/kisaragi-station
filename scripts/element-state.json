@@ -1,9 +1,13 @@
 {
-  "lastUpdated": "20260405",
+  "lastUpdated": "20260406",
   "activeElements": [
     {
       "type": "notice-item",
       "content": "改札外の掲示板は現在確認できません。"
+    },
+    {
+      "type": "footer-note",
+      "content": "※ 夜間の構内撮影はお控えください。"
     }
   ]
 }
