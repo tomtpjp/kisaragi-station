@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260412",
+  "lastUpdated": "20260413",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -8,10 +8,6 @@
         "time": "--:--",
         "dest": "不明"
       }
-    },
-    {
-      "type": "notice-item",
-      "content": "深夜帯の自動放送が一時中断しております。"
     }
   ]
 }
