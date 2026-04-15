@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260415",
+  "lastUpdated": "20260416",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -7,6 +7,14 @@
         "train": "臨時 XM-0",
         "time": "--:--",
         "dest": "不明"
+      }
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "特別 999M",
+        "time": "25:00",
+        "dest": "記録なし"
       }
     }
   ]
