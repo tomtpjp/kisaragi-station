@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "20260416",
+  "lastUpdated": "20260417",
   "activeElements": [
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "臨時 XM-0",
-        "time": "--:--",
-        "dest": "不明"
-      }
-    },
     {
       "type": "timetable-row",
       "content": {
