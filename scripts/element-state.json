@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "20260507",
+  "lastUpdated": "20260508",
   "activeElements": [
     {
       "type": "notice-item",
       "content": "1番線ホームの照明が一部点滅中です。"
-    },
-    {
-      "type": "footer-note",
-      "content": "※ 夜間の構内撮影はお控えください。"
     },
     {
       "type": "timetable-row",
