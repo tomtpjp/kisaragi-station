@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260508",
+  "lastUpdated": "20260509",
   "activeElements": [
     {
       "type": "notice-item",
@@ -11,6 +11,14 @@
         "train": "特別 999M",
         "time": "25:00",
         "dest": "記録なし"
+      }
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "回送 000M",
+        "time": "00:00",
+        "dest": "終点（停車なし）"
       }
     }
   ]
