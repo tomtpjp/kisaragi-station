@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260511",
+  "lastUpdated": "20260512",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -20,6 +20,14 @@
     {
       "type": "notice-item",
       "content": "1番線ホームの照明が一部点滅中です。"
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "臨時 XM-0",
+        "time": "--:--",
+        "dest": "不明"
+      }
     }
   ]
 }
