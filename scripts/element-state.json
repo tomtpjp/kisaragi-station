@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260512",
+  "lastUpdated": "20260513",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -16,10 +16,6 @@
         "time": "00:00",
         "dest": "終点（停車なし）"
       }
-    },
-    {
-      "type": "notice-item",
-      "content": "1番線ホームの照明が一部点滅中です。"
     },
     {
       "type": "timetable-row",
