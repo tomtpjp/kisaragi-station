@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260515",
+  "lastUpdated": "20260516",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -20,6 +20,10 @@
     {
       "type": "footer-note",
       "content": "※ 夜間の構内撮影はお控えください。"
+    },
+    {
+      "type": "notice-item",
+      "content": "改札外の掲示板は現在確認できません。"
     }
   ]
 }
