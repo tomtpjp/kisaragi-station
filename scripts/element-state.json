@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "20260516",
+  "lastUpdated": "20260517",
   "activeElements": [
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "特別 999M",
-        "time": "25:00",
-        "dest": "記録なし"
-      }
-    },
     {
       "type": "timetable-row",
       "content": {
