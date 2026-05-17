@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "20260517",
+  "lastUpdated": "20260518",
   "activeElements": [
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "回送 000M",
-        "time": "00:00",
-        "dest": "終点（停車なし）"
-      }
-    },
     {
       "type": "footer-note",
       "content": "※ 夜間の構内撮影はお控えください。"
