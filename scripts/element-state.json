@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260522",
+  "lastUpdated": "20260523",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -12,6 +12,10 @@
     {
       "type": "footer-note",
       "content": "※ 夜間の構内撮影はお控えください。"
+    },
+    {
+      "type": "map-legend-item",
+      "content": "B出口は長期閉鎖中です。"
     }
   ]
 }
