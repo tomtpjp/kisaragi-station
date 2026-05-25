@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260525",
+  "lastUpdated": "20260526",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -16,6 +16,10 @@
     {
       "type": "footer-note",
       "content": "※ 最終案内後、駅務室への連絡はできません。"
+    },
+    {
+      "type": "notice-item",
+      "content": "深夜帯の自動放送が一時中断しております。"
     }
   ]
 }
