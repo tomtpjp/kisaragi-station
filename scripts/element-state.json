@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260527",
+  "lastUpdated": "20260528",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -24,6 +24,10 @@
     {
       "type": "notice-item",
       "content": "改札外の掲示板は現在確認できません。"
+    },
+    {
+      "type": "notice-item",
+      "content": "非常通報装置の点検を実施しております。"
     }
   ]
 }
