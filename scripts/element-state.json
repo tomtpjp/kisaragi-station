@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260603",
+  "lastUpdated": "20260604",
   "activeElements": [
     {
       "type": "footer-note",
@@ -36,6 +36,10 @@
         "time": "00:00",
         "dest": "終点（停車なし）"
       }
+    },
+    {
+      "type": "map-legend-item",
+      "content": "待合室への入室は22時以降禁止です。"
     }
   ]
 }
