@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260607",
+  "lastUpdated": "20260608",
   "activeElements": [
     {
       "type": "footer-note",
@@ -12,14 +12,6 @@
     {
       "type": "notice-item",
       "content": "非常通報装置の点検を実施しております。"
-    },
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "臨時 XM-0",
-        "time": "--:--",
-        "dest": "不明"
-      }
     },
     {
       "type": "map-legend-item",
