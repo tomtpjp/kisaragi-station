@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260610",
+  "lastUpdated": "20260611",
   "activeElements": [
     {
       "type": "footer-note",
@@ -16,10 +16,6 @@
     {
       "type": "footer-note",
       "content": "※ 夜間の構内撮影はお控えください。"
-    },
-    {
-      "type": "notice-item",
-      "content": "1番線ホームの照明が一部点滅中です。"
     }
   ]
 }
