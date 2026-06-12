@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "20260612",
+  "lastUpdated": "20260613",
   "activeElements": [
     {
       "type": "footer-note",
       "content": "※ 最終案内後、駅務室への連絡はできません。"
-    },
-    {
-      "type": "notice-item",
-      "content": "改札外の掲示板は現在確認できません。"
     },
     {
       "type": "notice-item",
