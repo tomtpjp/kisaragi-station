@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260613",
+  "lastUpdated": "20260614",
   "activeElements": [
     {
       "type": "footer-note",
@@ -8,6 +8,10 @@
     {
       "type": "notice-item",
       "content": "非常通報装置の点検を実施しております。"
+    },
+    {
+      "type": "map-legend-item",
+      "content": "待合室への入室は22時以降禁止です。"
     }
   ]
 }
