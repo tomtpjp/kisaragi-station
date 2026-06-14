@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "20260614",
+  "lastUpdated": "20260615",
   "activeElements": [
     {
       "type": "footer-note",
       "content": "※ 最終案内後、駅務室への連絡はできません。"
-    },
-    {
-      "type": "notice-item",
-      "content": "非常通報装置の点検を実施しております。"
     },
     {
       "type": "map-legend-item",
