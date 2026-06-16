@@ -1,10 +1,10 @@
 :root {
-  --bg-1: #0f0d0b;
-  --bg-2: #1d1713;
-  --paper: #d2c4a6;
-  --ink: #16110d;
-  --accent: #9d2a1f;
-  --accent-soft: #b58d64;
+  --bg-1: #11141a;
+  --bg-2: #1f242c;
+  --paper: #d9d2bc;
+  --ink: #12151a;
+  --accent: #7e4030;
+  --accent-soft: #9d8262;
   --line: rgba(210, 196, 166, 0.35);
   --shadow: rgba(0, 0, 0, 0.55);
 }
@@ -19,12 +19,12 @@ body {
 }
 
 body {
-  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "BIZ UDPMincho", "Yu Mincho", "MS PMincho", serif;
   color: var(--paper);
   background:
-    radial-gradient(circle at 15% 10%, rgba(157, 42, 31, 0.15), transparent 38%),
-    radial-gradient(circle at 80% 80%, rgba(123, 101, 74, 0.22), transparent 42%),
-    linear-gradient(160deg, var(--bg-1), var(--bg-2));
+    radial-gradient(circle at 15% 10%, rgba(126, 64, 48, 0.16), transparent 38%),
+    radial-gradient(circle at 80% 80%, rgba(94, 110, 122, 0.2), transparent 42%),
+    linear-gradient(145deg, var(--bg-1), var(--bg-2));
   line-height: 1.65;
   letter-spacing: 0.02em;
   overflow-x: hidden;
