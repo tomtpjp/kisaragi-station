@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260620",
+  "lastUpdated": "20260621",
   "activeElements": [
     {
       "type": "map-legend-item",
@@ -20,6 +20,10 @@
     {
       "type": "footer-note",
       "content": "※ 最終案内後、駅務室への連絡はできません。"
+    },
+    {
+      "type": "notice-item",
+      "content": "改札外の掲示板は現在確認できません。"
     }
   ]
 }
