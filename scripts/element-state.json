@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260628",
+  "lastUpdated": "20260629",
   "activeElements": [
     {
       "type": "footer-note",
@@ -16,6 +16,10 @@
     {
       "type": "map-legend-item",
       "content": "B出口は長期閉鎖中です。"
+    },
+    {
+      "type": "notice-item",
+      "content": "非常通報装置の点検を実施しております。"
     }
   ]
 }
