@@ -1,25 +1,25 @@
 <svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="sky" x1="600" y1="0" x2="600" y2="780" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#120E0C"/>
-      <stop offset="1" stop-color="#2C201B"/>
+      <stop stop-color="#18120F"/>
+      <stop offset="1" stop-color="#2B201B"/>
     </linearGradient>
     <linearGradient id="ground" x1="600" y1="460" x2="600" y2="780" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1B1512"/>
-      <stop offset="1" stop-color="#090807"/>
+      <stop stop-color="#1E1713"/>
+      <stop offset="1" stop-color="#0B0908"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="780" fill="url(#sky)"/>
-  <circle cx="694" cy="155" r="71" fill="#D2BC91" fill-opacity="0.08"/>
+  <circle cx="822" cy="143" r="61" fill="#D2BC91" fill-opacity="0.08"/>
   <rect y="460" width="1200" height="320" fill="url(#ground)"/>
-  <rect x="275" y="303" width="707" height="208" fill="#171210"/>
-  <rect x="247" y="283" width="763" height="24" fill="#44302A"/>
-  <rect x="309" y="331" width="106" height="55" fill="#332721" opacity="0.9"/><rect x="442" y="331" width="106" height="55" fill="#332721" opacity="0.9"/><rect x="575" y="331" width="106" height="55" fill="#332721" opacity="0.9"/><rect x="708" y="331" width="106" height="55" fill="#332721" opacity="0.9"/><rect x="309" y="407" width="106" height="55" fill="#332721" opacity="0.9"/><rect x="442" y="407" width="106" height="55" fill="#332721" opacity="0.9"/><rect x="575" y="407" width="106" height="55" fill="#332721" opacity="0.9"/><rect x="708" y="407" width="106" height="55" fill="#332721" opacity="0.9"/>
-  <rect x="465" y="239" width="217" height="50" fill="#BCA173"/>
-  <text x="573" y="273" text-anchor="middle" font-size="38" font-family="serif" fill="#17120F">きさらぎ駅</text>
+  <rect x="273" y="309" width="697" height="201" fill="#171210"/>
+  <rect x="245" y="289" width="753" height="24" fill="#44302A"/>
+  <rect x="307" y="337" width="118" height="58" fill="#332721" opacity="0.9"/><rect x="449" y="337" width="118" height="58" fill="#332721" opacity="0.9"/><rect x="591" y="337" width="118" height="58" fill="#332721" opacity="0.9"/><rect x="733" y="337" width="118" height="58" fill="#332721" opacity="0.9"/><rect x="307" y="411" width="118" height="58" fill="#332721" opacity="0.9"/><rect x="449" y="411" width="118" height="58" fill="#332721" opacity="0.9"/><rect x="591" y="411" width="118" height="58" fill="#332721" opacity="0.9"/><rect x="733" y="411" width="118" height="58" fill="#332721" opacity="0.9"/>
+  <rect x="462" y="245" width="199" height="50" fill="#BCA173"/>
+  <text x="561" y="279" text-anchor="middle" font-size="38" font-family="serif" fill="#17120F">きさらぎ駅</text>
   <rect x="0" y="512" width="1200" height="7" fill="#6F5D4F" fill-opacity="0.56"/>
   <rect x="0" y="562" width="1200" height="5" fill="#8A7562" fill-opacity="0.35"/>
-  <rect x="235" y="525" width="17" height="165" fill="#151110" opacity="0.38"/><rect x="359" y="525" width="13" height="169" fill="#151110" opacity="0.38"/><rect x="494" y="525" width="17" height="159" fill="#151110" opacity="0.38"/><rect x="628" y="525" width="17" height="156" fill="#151110" opacity="0.38"/><rect x="772" y="525" width="16" height="155" fill="#151110" opacity="0.38"/><rect x="916" y="525" width="13" height="190" fill="#151110" opacity="0.38"/>
-  <ellipse cx="727" cy="402" rx="28" ry="66" fill="#0F0C0B" opacity="0.62"/>
-  <ellipse cx="725" cy="366" rx="18" ry="18" fill="#0F0C0B" opacity="0.62"/>
+  <rect x="228" y="525" width="15" height="162" fill="#151110" opacity="0.38"/><rect x="407" y="525" width="16" height="186" fill="#151110" opacity="0.38"/><rect x="581" y="525" width="14" height="190" fill="#151110" opacity="0.38"/><rect x="725" y="525" width="12" height="186" fill="#151110" opacity="0.38"/><rect x="871" y="525" width="14" height="162" fill="#151110" opacity="0.38"/><rect x="1038" y="525" width="12" height="187" fill="#151110" opacity="0.38"/>
+  <ellipse cx="588" cy="424" rx="28" ry="66" fill="#0F0C0B" opacity="0.62"/>
+  <ellipse cx="586" cy="388" rx="18" ry="18" fill="#0F0C0B" opacity="0.62"/>
 </svg>

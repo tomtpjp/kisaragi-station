@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260703",
+  "lastUpdated": "20260704",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -12,6 +12,10 @@
     {
       "type": "map-legend-item",
       "content": "B出口は長期閉鎖中です。"
+    },
+    {
+      "type": "notice-item",
+      "content": "1番線ホームの照明が一部点滅中です。"
     }
   ]
 }
