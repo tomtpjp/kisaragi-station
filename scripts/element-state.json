@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260706",
+  "lastUpdated": "20260707",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -8,10 +8,6 @@
         "time": "00:00",
         "dest": "終点（停車なし）"
       }
-    },
-    {
-      "type": "map-legend-item",
-      "content": "B出口は長期閉鎖中です。"
     },
     {
       "type": "notice-item",
