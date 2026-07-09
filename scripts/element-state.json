@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260709",
+  "lastUpdated": "20260710",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -12,6 +12,10 @@
     {
       "type": "notice-item",
       "content": "深夜帯の自動放送が一時中断しております。"
+    },
+    {
+      "type": "notice-item",
+      "content": "1番線ホームの照明が一部点滅中です。"
     }
   ]
 }
