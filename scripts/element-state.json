@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260716",
+  "lastUpdated": "20260717",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -8,6 +8,10 @@
         "time": "00:00",
         "dest": "終点（停車なし）"
       }
+    },
+    {
+      "type": "notice-item",
+      "content": "非常通報装置の点検を実施しております。"
     }
   ]
 }
