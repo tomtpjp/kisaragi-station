@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260717",
+  "lastUpdated": "20260718",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -12,6 +12,10 @@
     {
       "type": "notice-item",
       "content": "非常通報装置の点検を実施しております。"
+    },
+    {
+      "type": "footer-note",
+      "content": "※ 夜間の構内撮影はお控えください。"
     }
   ]
 }
