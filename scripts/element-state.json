@@ -1,4 +1,13 @@
 {
-  "lastUpdated": "20260725",
-  "activeElements": []
+  "lastUpdated": "20260726",
+  "activeElements": [
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "臨時 XM-0",
+        "time": "--:--",
+        "dest": "不明"
+      }
+    }
+  ]
 }
