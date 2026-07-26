@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260726",
+  "lastUpdated": "20260727",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -8,6 +8,10 @@
         "time": "--:--",
         "dest": "不明"
       }
+    },
+    {
+      "type": "notice-item",
+      "content": "改札外の掲示板は現在確認できません。"
     }
   ]
 }
