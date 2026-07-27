@@ -1,14 +1,6 @@
 {
-  "lastUpdated": "20260727",
+  "lastUpdated": "20260728",
   "activeElements": [
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "臨時 XM-0",
-        "time": "--:--",
-        "dest": "不明"
-      }
-    },
     {
       "type": "notice-item",
       "content": "改札外の掲示板は現在確認できません。"
