@@ -1,9 +1,13 @@
 {
-  "lastUpdated": "20260730",
+  "lastUpdated": "20260731",
   "activeElements": [
     {
       "type": "notice-item",
       "content": "改札外の掲示板は現在確認できません。"
+    },
+    {
+      "type": "notice-item",
+      "content": "深夜帯の自動放送が一時中断しております。"
     }
   ]
 }
