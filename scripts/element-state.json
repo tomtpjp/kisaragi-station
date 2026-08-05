@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260805",
+  "lastUpdated": "20260806",
   "activeElements": [
     {
       "type": "notice-item",
@@ -8,14 +8,6 @@
     {
       "type": "notice-item",
       "content": "深夜帯の自動放送が一時中断しております。"
-    },
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "臨時 XM-0",
-        "time": "--:--",
-        "dest": "不明"
-      }
     }
   ]
 }
