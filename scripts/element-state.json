@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260811",
+  "lastUpdated": "20260812",
   "activeElements": [
     {
       "type": "notice-item",
@@ -8,6 +8,14 @@
     {
       "type": "notice-item",
       "content": "深夜帯の自動放送が一時中断しております。"
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "回送 000M",
+        "time": "00:00",
+        "dest": "終点（停車なし）"
+      }
     }
   ]
 }
