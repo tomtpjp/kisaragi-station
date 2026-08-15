@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260815",
+  "lastUpdated": "20260816",
   "activeElements": [
     {
       "type": "notice-item",
@@ -8,6 +8,10 @@
     {
       "type": "notice-item",
       "content": "非常通報装置の点検を実施しております。"
+    },
+    {
+      "type": "footer-note",
+      "content": "※ 最終案内後、駅務室への連絡はできません。"
     }
   ]
 }
