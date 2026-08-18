@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "20260818",
+  "lastUpdated": "20260819",
   "activeElements": [
     {
       "type": "notice-item",
       "content": "改札外の掲示板は現在確認できません。"
-    },
-    {
-      "type": "notice-item",
-      "content": "非常通報装置の点検を実施しております。"
     },
     {
       "type": "map-legend-item",
