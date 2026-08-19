@@ -1,10 +1,6 @@
 {
-  "lastUpdated": "20260819",
+  "lastUpdated": "20260820",
   "activeElements": [
-    {
-      "type": "notice-item",
-      "content": "改札外の掲示板は現在確認できません。"
-    },
     {
       "type": "map-legend-item",
       "content": "奥の通路は現在封鎖されています。"
