@@ -1,4 +1,9 @@
 {
-  "lastUpdated": "20260821",
-  "activeElements": []
+  "lastUpdated": "20260822",
+  "activeElements": [
+    {
+      "type": "notice-item",
+      "content": "1番線ホームの照明が一部点滅中です。"
+    }
+  ]
 }
