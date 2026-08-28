@@ -1,4 +1,9 @@
 {
-  "lastUpdated": "20260828",
-  "activeElements": []
+  "lastUpdated": "20260829",
+  "activeElements": [
+    {
+      "type": "footer-note",
+      "content": "※ 最終案内後、駅務室への連絡はできません。"
+    }
+  ]
 }
