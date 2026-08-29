@@ -1,9 +1,17 @@
 {
-  "lastUpdated": "20260829",
+  "lastUpdated": "20260830",
   "activeElements": [
     {
       "type": "footer-note",
       "content": "※ 最終案内後、駅務室への連絡はできません。"
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "回送 000M",
+        "time": "00:00",
+        "dest": "終点（停車なし）"
+      }
     }
   ]
 }
