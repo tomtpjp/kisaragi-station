@@ -2,24 +2,24 @@
   <defs>
     <linearGradient id="sky" x1="600" y1="0" x2="600" y2="780" gradientUnits="userSpaceOnUse">
       <stop stop-color="#120E0C"/>
-      <stop offset="1" stop-color="#2C201B"/>
+      <stop offset="1" stop-color="#352722"/>
     </linearGradient>
     <linearGradient id="ground" x1="600" y1="460" x2="600" y2="780" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1B1512"/>
-      <stop offset="1" stop-color="#090807"/>
+      <stop stop-color="#221A16"/>
+      <stop offset="1" stop-color="#080707"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="780" fill="url(#sky)"/>
-  <circle cx="620" cy="96" r="45" fill="#D2BC91" fill-opacity="0.08"/>
+  <circle cx="578" cy="100" r="49" fill="#D2BC91" fill-opacity="0.08"/>
   <rect y="460" width="1200" height="320" fill="url(#ground)"/>
-  <rect x="229" y="314" width="750" height="194" fill="#171210"/>
-  <rect x="201" y="294" width="806" height="24" fill="#44302A"/>
-  <rect x="263" y="342" width="88" height="55" fill="#332721" opacity="0.9"/><rect x="369" y="342" width="88" height="55" fill="#332721" opacity="0.9"/><rect x="475" y="342" width="88" height="55" fill="#332721" opacity="0.9"/><rect x="581" y="342" width="88" height="55" fill="#332721" opacity="0.9"/><rect x="263" y="414" width="88" height="55" fill="#332721" opacity="0.9"/><rect x="369" y="414" width="88" height="55" fill="#332721" opacity="0.9"/><rect x="475" y="414" width="88" height="55" fill="#332721" opacity="0.9"/><rect x="581" y="414" width="88" height="55" fill="#332721" opacity="0.9"/>
-  <rect x="464" y="247" width="210" height="50" fill="#BCA173"/>
-  <text x="569" y="281" text-anchor="middle" font-size="38" font-family="serif" fill="#17120F">きさらぎ駅</text>
+  <rect x="270" y="311" width="700" height="197" fill="#171210"/>
+  <rect x="242" y="291" width="756" height="24" fill="#44302A"/>
+  <rect x="304" y="339" width="96" height="53" fill="#332721" opacity="0.9"/><rect x="427" y="339" width="96" height="53" fill="#332721" opacity="0.9"/><rect x="550" y="339" width="96" height="53" fill="#332721" opacity="0.9"/><rect x="673" y="339" width="96" height="53" fill="#332721" opacity="0.9"/><rect x="304" y="414" width="96" height="53" fill="#332721" opacity="0.9"/><rect x="427" y="414" width="96" height="53" fill="#332721" opacity="0.9"/><rect x="550" y="414" width="96" height="53" fill="#332721" opacity="0.9"/><rect x="673" y="414" width="96" height="53" fill="#332721" opacity="0.9"/>
+  <rect x="478" y="233" width="236" height="50" fill="#BCA173"/>
+  <text x="596" y="267" text-anchor="middle" font-size="38" font-family="serif" fill="#17120F">きさらぎ駅</text>
   <rect x="0" y="512" width="1200" height="7" fill="#6F5D4F" fill-opacity="0.56"/>
   <rect x="0" y="562" width="1200" height="5" fill="#8A7562" fill-opacity="0.35"/>
-  <rect x="236" y="525" width="13" height="167" fill="#151110" opacity="0.38"/><rect x="410" y="525" width="15" height="153" fill="#151110" opacity="0.38"/><rect x="545" y="525" width="17" height="179" fill="#151110" opacity="0.38"/><rect x="723" y="525" width="17" height="180" fill="#151110" opacity="0.38"/><rect x="863" y="525" width="17" height="158" fill="#151110" opacity="0.38"/><rect x="986" y="525" width="15" height="169" fill="#151110" opacity="0.38"/>
-  <ellipse cx="829" cy="420" rx="28" ry="66" fill="#0F0C0B" opacity="0.62"/>
-  <ellipse cx="827" cy="384" rx="18" ry="18" fill="#0F0C0B" opacity="0.62"/>
+  <rect x="238" y="525" width="14" height="168" fill="#151110" opacity="0.38"/><rect x="414" y="525" width="16" height="161" fill="#151110" opacity="0.38"/><rect x="557" y="525" width="16" height="169" fill="#151110" opacity="0.38"/><rect x="691" y="525" width="12" height="183" fill="#151110" opacity="0.38"/><rect x="830" y="525" width="17" height="183" fill="#151110" opacity="0.38"/><rect x="1006" y="525" width="16" height="170" fill="#151110" opacity="0.38"/>
+  <ellipse cx="875" cy="399" rx="28" ry="66" fill="#0F0C0B" opacity="0.62"/>
+  <ellipse cx="873" cy="363" rx="18" ry="18" fill="#0F0C0B" opacity="0.62"/>
 </svg>
