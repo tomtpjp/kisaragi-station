@@ -2,24 +2,24 @@
   <defs>
     <linearGradient id="sky" x1="600" y1="0" x2="600" y2="780" gradientUnits="userSpaceOnUse">
       <stop stop-color="#140F0D"/>
-      <stop offset="1" stop-color="#30241F"/>
+      <stop offset="1" stop-color="#2B201B"/>
     </linearGradient>
     <linearGradient id="ground" x1="600" y1="460" x2="600" y2="780" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1E1713"/>
-      <stop offset="1" stop-color="#080707"/>
+      <stop stop-color="#221A16"/>
+      <stop offset="1" stop-color="#0B0908"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="780" fill="url(#sky)"/>
-  <circle cx="872" cy="96" r="66" fill="#D2BC91" fill-opacity="0.08"/>
+  <circle cx="914" cy="92" r="62" fill="#D2BC91" fill-opacity="0.08"/>
   <rect y="460" width="1200" height="320" fill="url(#ground)"/>
-  <rect x="252" y="289" width="621" height="207" fill="#171210"/>
-  <rect x="224" y="269" width="677" height="24" fill="#44302A"/>
-  <rect x="286" y="317" width="109" height="59" fill="#332721" opacity="0.9"/><rect x="416" y="317" width="109" height="59" fill="#332721" opacity="0.9"/><rect x="546" y="317" width="109" height="59" fill="#332721" opacity="0.9"/><rect x="676" y="317" width="109" height="59" fill="#332721" opacity="0.9"/><rect x="286" y="397" width="109" height="59" fill="#332721" opacity="0.9"/><rect x="416" y="397" width="109" height="59" fill="#332721" opacity="0.9"/><rect x="546" y="397" width="109" height="59" fill="#332721" opacity="0.9"/><rect x="676" y="397" width="109" height="59" fill="#332721" opacity="0.9"/>
-  <rect x="484" y="223" width="216" height="50" fill="#BCA173"/>
-  <text x="592" y="257" text-anchor="middle" font-size="38" font-family="serif" fill="#17120F">きさらぎ駅</text>
+  <rect x="211" y="291" width="672" height="205" fill="#171210"/>
+  <rect x="183" y="271" width="728" height="24" fill="#44302A"/>
+  <rect x="245" y="319" width="101" height="44" fill="#332721" opacity="0.9"/><rect x="369" y="319" width="101" height="44" fill="#332721" opacity="0.9"/><rect x="493" y="319" width="101" height="44" fill="#332721" opacity="0.9"/><rect x="617" y="319" width="101" height="44" fill="#332721" opacity="0.9"/><rect x="245" y="379" width="101" height="44" fill="#332721" opacity="0.9"/><rect x="369" y="379" width="101" height="44" fill="#332721" opacity="0.9"/><rect x="493" y="379" width="101" height="44" fill="#332721" opacity="0.9"/><rect x="617" y="379" width="101" height="44" fill="#332721" opacity="0.9"/>
+  <rect x="389" y="219" width="190" height="50" fill="#BCA173"/>
+  <text x="484" y="253" text-anchor="middle" font-size="38" font-family="serif" fill="#17120F">きさらぎ駅</text>
   <rect x="0" y="512" width="1200" height="7" fill="#6F5D4F" fill-opacity="0.56"/>
   <rect x="0" y="562" width="1200" height="5" fill="#8A7562" fill-opacity="0.35"/>
-  <rect x="190" y="525" width="13" height="169" fill="#151110" opacity="0.38"/><rect x="334" y="525" width="16" height="169" fill="#151110" opacity="0.38"/><rect x="475" y="525" width="14" height="155" fill="#151110" opacity="0.38"/><rect x="649" y="525" width="12" height="187" fill="#151110" opacity="0.38"/><rect x="799" y="525" width="12" height="154" fill="#151110" opacity="0.38"/><rect x="943" y="525" width="16" height="172" fill="#151110" opacity="0.38"/>
-  <ellipse cx="700" cy="396" rx="28" ry="66" fill="#0F0C0B" opacity="0.62"/>
-  <ellipse cx="698" cy="360" rx="18" ry="18" fill="#0F0C0B" opacity="0.62"/>
+  <rect x="249" y="525" width="12" height="168" fill="#151110" opacity="0.38"/><rect x="391" y="525" width="15" height="162" fill="#151110" opacity="0.38"/><rect x="524" y="525" width="15" height="165" fill="#151110" opacity="0.38"/><rect x="681" y="525" width="17" height="183" fill="#151110" opacity="0.38"/><rect x="832" y="525" width="18" height="170" fill="#151110" opacity="0.38"/><rect x="983" y="525" width="16" height="171" fill="#151110" opacity="0.38"/>
+  <ellipse cx="654" cy="417" rx="28" ry="66" fill="#0F0C0B" opacity="0.62"/>
+  <ellipse cx="652" cy="381" rx="18" ry="18" fill="#0F0C0B" opacity="0.62"/>
 </svg>
