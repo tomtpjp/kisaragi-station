@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "20260912",
+  "lastUpdated": "20260913",
   "activeElements": [
     {
       "type": "map-legend-item",
       "content": "待合室への入室は22時以降禁止です。"
-    },
-    {
-      "type": "footer-note",
-      "content": "※ 最終案内後、駅務室への連絡はできません。"
     },
     {
       "type": "notice-item",
