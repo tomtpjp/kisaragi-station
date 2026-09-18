@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20260918",
+  "lastUpdated": "20260919",
   "activeElements": [
     {
       "type": "map-legend-item",
@@ -12,6 +12,10 @@
     {
       "type": "map-legend-item",
       "content": "奥の通路は現在封鎖されています。"
+    },
+    {
+      "type": "footer-note",
+      "content": "※ 夜間の構内撮影はお控えください。"
     }
   ]
 }
