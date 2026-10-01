@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "20261001",
+  "lastUpdated": "20261002",
   "activeElements": [
     {
       "type": "notice-item",
       "content": "深夜帯の自動放送が一時中断しております。"
-    },
-    {
-      "type": "map-legend-item",
-      "content": "奥の通路は現在封鎖されています。"
     },
     {
       "type": "notice-item",
