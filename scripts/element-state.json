@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261003",
+  "lastUpdated": "20261004",
   "activeElements": [
     {
       "type": "notice-item",
@@ -20,6 +20,10 @@
     {
       "type": "notice-item",
       "content": "非常通報装置の点検を実施しております。"
+    },
+    {
+      "type": "map-legend-item",
+      "content": "奥の通路は現在封鎖されています。"
     }
   ]
 }
