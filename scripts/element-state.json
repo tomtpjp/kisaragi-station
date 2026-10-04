@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261004",
+  "lastUpdated": "20261005",
   "activeElements": [
     {
       "type": "notice-item",
@@ -8,14 +8,6 @@
     {
       "type": "notice-item",
       "content": "1番線ホームの照明が一部点滅中です。"
-    },
-    {
-      "type": "timetable-row",
-      "content": {
-        "train": "特別 999M",
-        "time": "25:00",
-        "dest": "記録なし"
-      }
     },
     {
       "type": "notice-item",
