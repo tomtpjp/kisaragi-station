@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261007",
+  "lastUpdated": "20261008",
   "activeElements": [
     {
       "type": "notice-item",
@@ -16,6 +16,10 @@
     {
       "type": "footer-note",
       "content": "※ 夜間の構内撮影はお控えください。"
+    },
+    {
+      "type": "map-legend-item",
+      "content": "待合室への入室は22時以降禁止です。"
     }
   ]
 }
