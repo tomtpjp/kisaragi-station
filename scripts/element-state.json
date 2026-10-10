@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261010",
+  "lastUpdated": "20261011",
   "activeElements": [
     {
       "type": "notice-item",
@@ -8,10 +8,6 @@
     {
       "type": "notice-item",
       "content": "非常通報装置の点検を実施しております。"
-    },
-    {
-      "type": "footer-note",
-      "content": "※ 夜間の構内撮影はお控えください。"
     },
     {
       "type": "map-legend-item",
