@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261013",
+  "lastUpdated": "20261014",
   "activeElements": [
     {
       "type": "notice-item",
@@ -20,10 +20,6 @@
         "time": "25:00",
         "dest": "記録なし"
       }
-    },
-    {
-      "type": "notice-item",
-      "content": "改札外の掲示板は現在確認できません。"
     },
     {
       "type": "timetable-row",
