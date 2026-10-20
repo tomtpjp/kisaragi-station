@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261020",
+  "lastUpdated": "20261021",
   "activeElements": [
     {
       "type": "notice-item",
@@ -24,6 +24,14 @@
     {
       "type": "map-legend-item",
       "content": "奥の通路は現在封鎖されています。"
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "特別 999M",
+        "time": "25:00",
+        "dest": "記録なし"
+      }
     }
   ]
 }
