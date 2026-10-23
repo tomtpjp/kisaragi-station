@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261023",
+  "lastUpdated": "20261024",
   "activeElements": [
     {
       "type": "notice-item",
@@ -28,10 +28,6 @@
         "time": "25:00",
         "dest": "記録なし"
       }
-    },
-    {
-      "type": "notice-item",
-      "content": "深夜帯の自動放送が一時中断しております。"
     }
   ]
 }
