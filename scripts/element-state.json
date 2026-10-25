@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261025",
+  "lastUpdated": "20261026",
   "activeElements": [
     {
       "type": "notice-item",
@@ -32,6 +32,14 @@
     {
       "type": "footer-note",
       "content": "※ 夜間の構内撮影はお控えください。"
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "臨時 XM-0",
+        "time": "--:--",
+        "dest": "不明"
+      }
     }
   ]
 }
