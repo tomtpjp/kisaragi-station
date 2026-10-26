@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261026",
+  "lastUpdated": "20261027",
   "activeElements": [
     {
       "type": "notice-item",
@@ -40,6 +40,10 @@
         "time": "--:--",
         "dest": "不明"
       }
+    },
+    {
+      "type": "notice-item",
+      "content": "1番線ホームの照明が一部点滅中です。"
     }
   ]
 }
