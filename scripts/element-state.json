@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "20261029",
+  "lastUpdated": "20261030",
   "activeElements": [
     {
       "type": "notice-item",
       "content": "非常通報装置の点検を実施しております。"
-    },
-    {
-      "type": "map-legend-item",
-      "content": "奥の通路は現在封鎖されています。"
     },
     {
       "type": "timetable-row",
