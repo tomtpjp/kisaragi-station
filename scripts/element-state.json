@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261030",
+  "lastUpdated": "20261031",
   "activeElements": [
     {
       "type": "notice-item",
@@ -28,6 +28,10 @@
     {
       "type": "notice-item",
       "content": "1番線ホームの照明が一部点滅中です。"
+    },
+    {
+      "type": "map-legend-item",
+      "content": "B出口は長期閉鎖中です。"
     }
   ]
 }
