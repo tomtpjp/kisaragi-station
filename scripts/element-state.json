@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261102",
+  "lastUpdated": "20261103",
   "activeElements": [
     {
       "type": "notice-item",
@@ -32,6 +32,10 @@
     {
       "type": "map-legend-item",
       "content": "待合室への入室は22時以降禁止です。"
+    },
+    {
+      "type": "map-legend-item",
+      "content": "奥の通路は現在封鎖されています。"
     }
   ]
 }
