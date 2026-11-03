@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261103",
+  "lastUpdated": "20261104",
   "activeElements": [
     {
       "type": "notice-item",
@@ -28,10 +28,6 @@
     {
       "type": "map-legend-item",
       "content": "B出口は長期閉鎖中です。"
-    },
-    {
-      "type": "map-legend-item",
-      "content": "待合室への入室は22時以降禁止です。"
     },
     {
       "type": "map-legend-item",
