@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261106",
+  "lastUpdated": "20261107",
   "activeElements": [
     {
       "type": "notice-item",
@@ -32,6 +32,14 @@
     {
       "type": "notice-item",
       "content": "改札外の掲示板は現在確認できません。"
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "回送 000M",
+        "time": "00:00",
+        "dest": "終点（停車なし）"
+      }
     }
   ]
 }
