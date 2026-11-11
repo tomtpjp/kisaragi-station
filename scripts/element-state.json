@@ -1,10 +1,6 @@
 {
-  "lastUpdated": "20261111",
+  "lastUpdated": "20261112",
   "activeElements": [
-    {
-      "type": "notice-item",
-      "content": "非常通報装置の点検を実施しております。"
-    },
     {
       "type": "timetable-row",
       "content": {
