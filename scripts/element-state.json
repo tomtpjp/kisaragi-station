@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261112",
+  "lastUpdated": "20261113",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -32,10 +32,6 @@
     {
       "type": "map-legend-item",
       "content": "待合室への入室は22時以降禁止です。"
-    },
-    {
-      "type": "notice-item",
-      "content": "1番線ホームの照明が一部点滅中です。"
     }
   ]
 }
