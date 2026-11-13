@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261113",
+  "lastUpdated": "20261114",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -32,6 +32,10 @@
     {
       "type": "map-legend-item",
       "content": "待合室への入室は22時以降禁止です。"
+    },
+    {
+      "type": "notice-item",
+      "content": "深夜帯の自動放送が一時中断しております。"
     }
   ]
 }
