@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "20261118",
+  "lastUpdated": "20261119",
   "activeElements": [
     {
       "type": "timetable-row",
@@ -32,6 +32,14 @@
     {
       "type": "map-legend-item",
       "content": "奥の通路は現在封鎖されています。"
+    },
+    {
+      "type": "timetable-row",
+      "content": {
+        "train": "回送 000M",
+        "time": "00:00",
+        "dest": "終点（停車なし）"
+      }
     }
   ]
 }
